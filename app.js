@@ -12,7 +12,7 @@ class PortfolioApp {
                 "github": "https://github.com/PratikMali2210",
                 "credly": "https://www.credly.com/users/pratik-mali",
                 "profile": "Results-driven IVR and Contact Center Specialist with over 3 years of experience specializing in Genesys Cloud CX and NICE CXone platforms. Adept at designing and implementing self-service IVR, Omni-Channel Orchestration Routing, and architecting advanced bot flows.",
-                "photo": "./images/pratik-mali-photo.jpg",
+                "photo": "./assets/Pratik-Mali-Photo.jpeg",
                 "resume": "./assets/Pratik-Mali-Resume.pdf"
             },
             "experience": [
