@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Mali - IVR & Genesys Cloud Bot Developer</title>
+    <meta name="description" content="IVR & Bot Developer specializing in Genesys Cloud CX and NICE CXone platforms. Expert in contact center solutions, API integrations, and React development.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Tutorial Mode Button -->
+    <button id="tutorial-btn" class="tutorial-btn">
+        <i class="fas fa-graduation-cap"></i>
+        Tutorial Mode
+    </button>
+
+    <!-- Tutorial Overlay -->
+    <div id="tutorial-overlay" class="tutorial-overlay hidden">
+        <div class="tutorial-content">
+            <div class="tutorial-header">
+                <h3 id="tutorial-title">Step 1: HTML Structure Setup</h3>
+                <button id="tutorial-close" class="tutorial-close">&times;</button>
+            </div>
+            <div class="tutorial-body">
+                <div id="tutorial-explanation" class="tutorial-explanation">
+                    We start with semantic HTML5 structure using tags like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, and &lt;footer&gt;. This provides better accessibility and SEO.
+                </div>
+                <div class="tutorial-code">
+                    <pre><code id="tutorial-code-content"></code></pre>
+                </div>
+                <div id="tutorial-why" class="tutorial-why">
+                    <strong>Why we use this:</strong> This sets up the basic HTML5 document structure with proper meta tags for responsive design and character encoding.
+                </div>
+            </div>
+            <div class="tutorial-navigation">
+                <button id="tutorial-prev" class="btn btn--secondary">Previous</button>
+                <span id="tutorial-progress">1 / 10</span>
+                <button id="tutorial-next" class="btn btn--primary">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Pratik Mali</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Technical Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="text-primary">Pratik Mali</span></h1>
+                <h2 class="hero-subtitle">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Results-driven IVR and Contact Center Specialist with over 3 years of experience specializing in Genesys Cloud CX and NICE CXone platforms. Expert in designing self-service IVR, omni-channel routing, and advanced bot flows.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn--primary">View My Work</a>
+                    <a href="#contact" class="btn btn--outline">Hire Me</a>
+                    <a href="./assets/Pratik-Mali-Resume.pdf" download="Pratik-Mali-Resume.pdf" class="btn btn--outline">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/PratikMali2210" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pratik-mali-06b172228/" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:malipratik999@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.credly.com/users/pratik-mali" target="_blank" class="social-link" title="Credly Badges">
+                        <i class="fas fa-certificate"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-container">
+                    <div class="profile-img">
+                        <img src="./images/pratik-mali-photo.jpg" alt="Pratik Mali - IVR & Genesys Cloud Bot Developer" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="./images/pratik-mali-photo.jpg" alt="Pratik Mali" class="about-photo">
+                        <div class="about-img-overlay">
+                            <div class="experience-badge">
+                                <span class="badge-number">3+</span>
+                                <span class="badge-text">Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">I'm a passionate <strong>IVR & Contact Center Developer</strong> based in Pune, Maharashtra, India. I specialize in creating innovative contact center solutions that enhance customer experience and operational efficiency.</p>
+                    <p>My expertise lies in designing and implementing self-service IVR systems, conversational AI interfaces, and seamless third-party integrations using industry-leading platforms like <strong>Genesys Cloud</strong> and <strong>NICE CXone</strong>.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Certified Professional</h4>
+                                <p>AWS, Azure, and NICE certified with verified credentials</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <h4>Enterprise Solutions</h4>
+                                <p>Delivered PCI-compliant payment IVR and CRM integrations</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Team Collaboration</h4>
+                                <p>Proven track record working with global teams at Capgemini</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="experience">Experience</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                    <button class="tab-btn" data-tab="achievements">Key Achievements</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Oct 2024 - July 2025</div>
+                                <div class="timeline-content">
+                                    <h4>NICE CXone & IVR Specialist</h4>
+                                    <p class="company">Capgemini Digital (Chubb Life Indonesia)</p>
+                                    <ul>
+                                        <li>Designed reusable config-driven IVR architecture for flexible input and routing</li>
+                                        <li>Implemented ANI-based data dips to fetch customer-specific data from backend APIs</li>
+                                        <li>Created agent screen pop features for MS Dynamics (both embedded and external)</li>
+                                        <li>Developed TokenEx (S6) and CRS Payment IVR flows for PCI-compliant transactions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Oct 2023 - May 2025</div>
+                                <div class="timeline-content">
+                                    <h4>Genesys Cloud & IVR Specialist</h4>
+                                    <p class="company">Capgemini Digital</p>
+                                    <ul>
+                                        <li>Designed advanced IVR flows in Genesys Architect for self-service and speech-based routing</li>
+                                        <li>Integrated Salesforce with Genesys Cloud to enhance data sync and personalize engagement</li>
+                                        <li>Developed and maintained omni-channel bot solutions (voice/non-voice)</li>
+                                        <li>Enabled API-driven integrations for dynamic caller identification and backend data dips</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Feb - Oct 2023</div>
+                                <div class="timeline-content">
+                                    <h4>Technical Support Engineer</h4>
+                                    <p class="company">Discover Account (Support Role)</p>
+                                    <ul>
+                                        <li>Provided technical support with SQL and UNIX systems to troubleshoot system performance</li>
+                                        <li>Assisted backend teams by resolving system issues, ensuring 99%+ operational uptime</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="education">
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-content">
+                                <h4>Bachelor of Engineering - Mechanical Engineering</h4>
+                                <p class="institution">SKN Sinhgad College of Engineering, Korti Pandharpur</p>
+                                <p class="year">2017 - 2021</p>
+                                <p class="description">Strong foundation in engineering principles with focus on problem-solving and analytical thinking. Developed technical aptitude that later translated into software development and contact center technologies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="languages-section">
+                            <h4><i class="fas fa-language"></i> Languages</h4>
+                            <div class="languages-grid">
+                                <div class="language-item">
+                                    <span class="language-name">Marathi</span>
+                                    <span class="language-level native">Native</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="language-name">Hindi</span>
+                                    <span class="language-level proficient">Proficient</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="language-name">English</span>
+                                    <span class="language-level intermediate">Professional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="achievements">
+                        <div class="achievements-grid">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h4>PCI-Compliant Solutions</h4>
+                                    <p>Designed and implemented secure payment IVR flows using TokenEx (S6) for financial transactions, ensuring full PCI DSS compliance</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h4>CRM Integration Expert</h4>
+                                    <p>Successfully integrated Salesforce with Genesys Cloud, improving customer data management and agent productivity by 40%</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h4>System Reliability</h4>
+                                    <p>Maintained 99%+ operational uptime in critical contact center environments while managing complex IVR architectures</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h4>Multi-Platform Certified</h4>
+                                    <p>Earned professional certifications across AWS, Azure, NICE CXone, and multiple programming platforms</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category" id="skills-contact-center">
+                    <h3><i class="fas fa-headset"></i> Contact Center Platforms</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>NICE CXone</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Genesys Cloud</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>IVR Flow Creation</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Bot Development</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Kore AI XO11</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" id="skills-programming">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>API Development</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" id="skills-cloud">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Integration</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AWS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Azure</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Salesforce Integration</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" id="skills-frameworks">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Angular</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5/CSS3</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Redux Toolkit</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item" onclick="toggleExperienceDetails(this)">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>NICE CXone & IVR Specialist</h3>
+                            <span class="timeline-date">Oct 2024 - July 2025</span>
+                        </div>
+                        <p class="company">Capgemini Digital - Chubb Life Indonesia</p>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Designed reusable config-driven IVR architecture for flexible input and routing</li>
+                                <li>Implemented ANI-based data dips to fetch customer-specific data from backend APIs</li>
+                                <li>Created agent screen pop features for MS Dynamics (both embedded and external)</li>
+                                <li>Developed TokenEx (S6) and CRS Payment IVR flows for PCI-compliant transactions</li>
+                                <li>Enabled marquee messaging on agent desktops for dynamic alert communication</li>
+                                <li>Configured Personal Connection (PC) outbound campaigns using multiple dialer modes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" onclick="toggleExperienceDetails(this)">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Genesys Cloud & IVR Specialist</h3>
+                            <span class="timeline-date">Oct 2023 - May 2025</span>
+                        </div>
+                        <p class="company">Capgemini Digital</p>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Designed advanced IVR flows in Genesys Architect for self-service and speech-based routing</li>
+                                <li>Integrated Salesforce with Genesys Cloud to enhance data sync and personalize engagement</li>
+                                <li>Developed and maintained omni-channel bot solutions (voice/non-voice) using Genesys Architect</li>
+                                <li>Enabled API-driven integrations for dynamic caller identification and backend data dips</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" onclick="toggleExperienceDetails(this)">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Technical Support Engineer</h3>
+                            <span class="timeline-date">Feb - Oct 2023</span>
+                        </div>
+                        <p class="company">Discover Account (Support Role)</p>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Provided technical support with SQL and UNIX systems to troubleshoot system performance</li>
+                                <li>Assisted backend teams by resolving system issues, ensuring 99%+ operational uptime</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="genesys">Genesys</button>
+                <button class="filter-btn" data-filter="integration">Integration</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Real GitHub Projects -->
+                <div class="project-card" data-category="react frontend">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-film"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Movix - Movie & TV Show App</h3>
+                        <p>A modern React application for browsing movies and TV shows with advanced search, filtering, and detailed information views. Features responsive design and smooth user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux Toolkit</span>
+                            <span class="tech-tag">React Router</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-search"></i>
+                                <span>Movie/TV Show Database</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-filter"></i>
+                                <span>Search & Filter</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-plug"></i>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PratikMali2210/pratik-mali-movix-new-app" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                            <a href="https://pratik-mali-movix-new-app.netlify.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="react ecommerce">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-featured e-commerce web application with product catalog, shopping cart functionality, user authentication, and modern responsive design. Demonstrates full-stack development skills.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">E-commerce Features</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-th-large"></i>
+                                <span>Product Catalog</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Shopping Cart</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-user-check"></i>
+                                <span>User Authentication</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Payment Integration</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PratikMali2210/e-commerce-site-delay" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                            <a href="https://e-commerce-site-delay.netlify.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="genesys integration">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Genesys Messenger Integration</h3>
+                        <p>Contact center messaging solution showcasing Genesys Cloud platform integration expertise. Demonstrates real-world application of contact center technologies and messaging capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Genesys Cloud SDK</span>
+                            <span class="tech-tag">Real-time Messaging</span>
+                            <span class="tech-tag">Contact Center Integration</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-cloud"></i>
+                                <span>Genesys Cloud Integration</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Real-time Messaging</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-cogs"></i>
+                                <span>Contact Center SDK</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Professional Implementation</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PratikMali2210/genesysmessenger" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                            <a href="https://genesysmessenger.netlify.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <p>Want to see more of my work?</p>
+                <a href="https://github.com/PratikMali2210" target="_blank" class="btn btn--outline">
+                    <i class="fab fa-github"></i>
+                    View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Professional Certifications</h2>
+            <div class="certifications-note">
+                <p><i class="fas fa-shield-alt"></i> All certifications are verified and can be validated through official certification providers</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card verified" data-certification="nice" onclick="showCertificationModal('nice')">
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified</span>
+                    </div>
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>NICE Certified Implementation Engineer</h3>
+                    <p class="cert-provider">CXone Mpower ACD/IVR</p>
+                    <div class="cert-skills">
+                        <span>IVR Configuration</span>
+                        <span>ACD Management</span>
+                        <span>CXone Platform</span>
+                    </div>
+                    <div class="cert-verification">
+                        <small>Verified Professional Certification</small>
+                    </div>
+                </div>
+                
+                <div class="certification-card verified" data-certification="aws-cp" onclick="showCertificationModal('aws-cp')">
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified</span>
+                    </div>
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Certified Cloud Practitioner</h3>
+                    <p class="cert-provider">Amazon Web Services</p>
+                    <div class="cert-skills">
+                        <span>Cloud Fundamentals</span>
+                        <span>AWS Services</span>
+                        <span>Security & Compliance</span>
+                    </div>
+                    <div class="cert-verification">
+                        <a href="https://www.credly.com/badges/f72b1c89-bee9-46df-b820-e288dfd3b4c7/linked_in_profile" target="_blank" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify on Credly
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="certification-card verified" data-certification="aws-sa" onclick="showCertificationModal('aws-sa')">
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified</span>
+                    </div>
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Solutions Architect</h3>
+                    <p class="cert-provider">Associate Level</p>
+                    <div class="cert-skills">
+                        <span>Architecture Design</span>
+                        <span>High Performance</span>
+                        <span>Cost Optimization</span>
+                    </div>
+                    <div class="cert-verification">
+                        <a href="https://www.credly.com/badges/d7ea00f9-e857-4e6e-8dec-70740497bd4b/linked_in_profile" target="_blank" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify on Credly
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="certification-card verified" data-certification="azure" onclick="showCertificationModal('azure')">
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified</span>
+                    </div>
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Azure Fundamentals</h3>
+                    <p class="cert-provider">Microsoft</p>
+                    <div class="cert-skills">
+                        <span>Azure Services</span>
+                        <span>Cloud Concepts</span>
+                        <span>Security Features</span>
+                    </div>
+                    <div class="cert-verification">
+                        <small>Microsoft Certified Professional</small>
+                    </div>
+                </div>
+                
+                <div class="certification-card" data-certification="java" onclick="showCertificationModal('java')">
+                    <div class="cert-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java OOPs Certification</h3>
+                    <p class="cert-provider">HackerRank</p>
+                    <div class="cert-skills">
+                        <span>Object-Oriented Programming</span>
+                        <span>Java Development</span>
+                    </div>
+                </div>
+                
+                <div class="certification-card" data-certification="angular" onclick="showCertificationModal('angular')">
+                    <div class="cert-icon">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <h3>Angular Certification</h3>
+                    <p class="cert-provider">HackerRank</p>
+                    <div class="cert-skills">
+                        <span>Frontend Framework</span>
+                        <span>Component Development</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+                
+                <div class="certification-card" data-certification="java-ds" onclick="showCertificationModal('java-ds')">
+                    <div class="cert-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p class="cert-provider">Udemy</p>
+                    <div class="cert-skills">
+                        <span>Algorithm Design</span>
+                        <span>Data Structures</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certification-verification-info">
+                <div class="verification-methods">
+                    <h4>Certification Verification</h4>
+                    <div class="verification-links">
+                        <a href="https://aws.amazon.com/verification" target="_blank" class="verification-link">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Certification Verification</span>
+                        </a>
+                        <a href="https://www.credly.com/users/pratik-mali" target="_blank" class="verification-link">
+                            <i class="fas fa-certificate"></i>
+                            <span>View All Badges on Credly</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's discuss your contact center projects!</h3>
+                    <p>I'm passionate about creating innovative contact center solutions that enhance customer experience. Whether you need IVR development, bot implementation, or system integrations, I'm here to help.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>malipratik999@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+91 7066889505</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Pune, Maharashtra, India</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <a href="https://www.linkedin.com/in/pratik-mali-06b172228/" target="_blank">Connect with me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="response-time">
+                        <i class="fas fa-clock"></i>
+                        <span>I typically respond within 24 hours</span>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Contact Form -->
+                <form class="contact-form" id="contact-form">
+                    <div class="form-status" id="form-status"></div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Full Name" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="your.email@company.com" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" class="form-control" placeholder="Your Company">
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Your Position</label>
+                            <input type="text" id="position" name="position" class="form-control" placeholder="Your Job Title">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" class="form-control" required>
+                            <option value="">Select a subject...</option>
+                            <option value="IVR Development">IVR Development Project</option>
+                            <option value="Contact Center Solution">Contact Center Solution</option>
+                            <option value="Genesys Cloud Integration">Genesys Cloud Integration</option>
+                            <option value="Bot Development">Bot Development</option>
+                            <option value="Consultation">General Consultation</option>
+                            <option value="Job Opportunity">Job Opportunity</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span class="form-error" id="subject-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell me about your project requirements, timeline, and how I can help you..." required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                        <div class="character-count">
+                            <span id="char-count">0</span> / 500 characters
+                        </div>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <span class="checkmark"></span>
+                            I consent to having this website store my submitted information for the purpose of responding to my inquiry. *
+                        </label>
+                        <span class="form-error" id="consent-error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full-width" id="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading hidden">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            Sending...
+                        </span>
+                    </button>
+                    
+                    <div class="form-note">
+                        <small><i class="fas fa-shield-alt"></i> Your information is secure and will only be used to respond to your inquiry.</small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Pratik Mali. All rights reserved.</p>
+                    <p>IVR & Genesys Cloud Bot Developer | Contact Center Solutions Expert</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/PratikMali2210" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pratik-mali-06b172228/" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:malipratik999@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.credly.com/users/pratik-mali" target="_blank" class="social-link" title="Credly Badges">
+                        <i class="fas fa-certificate"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certification Modal -->
+    <div id="certification-modal" class="modal hidden">
+        <div class="modal-overlay" onclick="hideCertificationModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Certification Details</h3>
+                <button class="modal-close" onclick="hideCertificationModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-content">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Success/Error Messages Container -->
+    <div id="message-container"></div>
+
+    <script>
+        // Simple functions for experience and certification interactions
+        function toggleExperienceDetails(item) {
+            const details = item.querySelector('.experience-details');
+            const isActive = item.classList.contains('active');
+            
+            // Close all other items
+            document.querySelectorAll('.timeline-item').forEach(i => {
+                i.classList.remove('active');
+                const d = i.querySelector('.experience-details');
+                if (d) d.style.maxHeight = '0';
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+                if (details) {
+                    details.style.maxHeight = details.scrollHeight + 'px';
+                }
+            }
+        }
+
+        function showCertificationModal(certId) {
+            const modal = document.getElementById('certification-modal');
+            const title = document.getElementById('modal-title');
+            const content = document.getElementById('modal-content');
+            
+            // Certification data with verification links
+            const certData = {
+                'nice': {
+                    title: 'NICE Certified Implementation Engineer',
+                    subtitle: 'CXone Mpower ACD/IVR',
+                    provider: 'NICE',
+                    description: 'Professional certification covering NICE CXone platform implementation, IVR flow design, ACD configuration, and contact center solution architecture.',
+                    skills: ['IVR Configuration', 'ACD Management', 'CXone Platform', 'Contact Center Solutions'],
+                    verified: true
+                },
+                'aws-cp': {
+                    title: 'AWS Certified Cloud Practitioner',
+                    provider: 'Amazon Web Services',
+                    description: 'Foundation-level certification covering AWS cloud concepts, services, security, architecture, pricing, and support.',
+                    skills: ['Cloud Fundamentals', 'AWS Services', 'Security & Compliance', 'Billing Models'],
+                    verified: true,
+                    verifyLink: 'https://www.credly.com/badges/f72b1c89-bee9-46df-b820-e288dfd3b4c7/linked_in_profile'
+                },
+                'aws-sa': {
+                    title: 'AWS Certified Solutions Architect',
+                    subtitle: 'Associate',
+                    provider: 'Amazon Web Services',
+                    description: 'Associate-level certification demonstrating ability to design distributed applications and systems on the AWS platform.',
+                    skills: ['Architecture Design', 'High Performance', 'Cost Optimization', 'Resilient Systems'],
+                    verified: true,
+                    verifyLink: 'https://www.credly.com/badges/d7ea00f9-e857-4e6e-8dec-70740497bd4b/linked_in_profile'
+                }
+            };
+            
+            const cert = certData[certId];
+            if (cert && title && content && modal) {
+                title.textContent = cert.title;
+                content.innerHTML = `
+                    <div class="cert-modal-details">
+                        <div class="cert-header">
+                            <div class="cert-provider">${cert.provider}</div>
+                            ${cert.subtitle ? `<div class="cert-subtitle">${cert.subtitle}</div>` : ''}
+                            ${cert.verified ? '<div class="cert-verified"><i class="fas fa-check-circle"></i> Verified Certification</div>' : ''}
+                        </div>
+                        <div class="cert-description">${cert.description}</div>
+                        <div class="cert-skills-section">
+                            <h4>Skills Covered:</h4>
+                            <div class="cert-skills-grid">
+                                ${cert.skills.map(skill => `<span class="skill-badge">${skill}</span>`).join('')}
+                            </div>
+                        </div>
+                        ${cert.verifyLink ? `
+                            <div class="cert-verify-section">
+                                <a href="${cert.verifyLink}" target="_blank" class="verify-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Verify on Credly
+                                </a>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+                modal.classList.remove('hidden');
+            }
+        }
+
+        function hideCertificationModal() {
+            const modal = document.getElementById('certification-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+            }
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
