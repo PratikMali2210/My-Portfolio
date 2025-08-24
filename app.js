@@ -85,7 +85,7 @@ class PortfolioApp {
                     {"name": "NICE CXone", "level": 95},
                     {"name": "Genesys Cloud", "level": 95},
                     {"name": "IVR Flow Creation", "level": 95},
-                    {"name": "Bot Development", "level": 88},
+                    {"name": "Chat Bot Development", "level": 88},
                     {"name": "Kore AI XO11", "level": 85}
                 ],
                 "programming": [
@@ -97,13 +97,13 @@ class PortfolioApp {
                 "cloud": [
                     {"name": "AWS", "level": 75},
                     {"name": "Azure", "level": 70},
-                    {"name": "Salesforce Integration", "level": 85}
+                    {"name": "Salesforce", "level": 85}
                 ],
                 "frameworks": [
-                    {"name": "React", "level": 80},
-                    {"name": "Angular", "level": 78},
+                    {"name": "ReactJS", "level": 80},
+                    {"name": "AngularJS", "level": 78},
                     {"name": "HTML5/CSS3", "level": 90},
-                    {"name": "Redux Toolkit", "level": 75}
+                    {"name": "Redux Toolkit", "level": 70}
                 ]
             },
             "certifications": [
