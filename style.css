@@ -892,6 +892,18 @@ select.form-control {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;  /* stack text & image */
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    min-height: auto;
+    justify-content: center;
+  }
+}
+
 .typing-text {
   color: var(--color-primary);
   font-weight: var(--font-weight-medium);
