@@ -20,7 +20,7 @@ class PortfolioApp {
                 {
                     "title": "NICE CXone & IVR Specialist",
                     "company": "Capgemini Digital",
-                    "project": "Chubb Life Indonesia",
+                    "project": "Indonesia",
                     "duration": "Oct 2024 - July 2025",
                     "responsibilities": [
                         "Designed reusable config-driven IVR architecture for flexible input and routing",
