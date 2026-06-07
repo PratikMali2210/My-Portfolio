@@ -1,52 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-scheme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratik Mali - IVR & Contact Center Developer</title>
-    <meta name="description" content="Portfolio of Pratik Mali - IVR & Genesys Cloud Bot Developer specializing in Contact Center Solutions">
+    <title>Pratik Mali - IVR & Genesys Cloud Bot Developer | Software Developer</title>
+    <meta name="description" content="Results-driven IVR and Contact Center Specialist with over 3 years of experience in Genesys Cloud CX, NICE CXone, chatbot-related development, API integrations, and customer service automation. Currently contributing to conversational AI solutions at Quantiphi.">
+    <meta name="keywords" content="IVR Developer, Genesys Cloud, NICE CXone, Contact Center, Chatbot, Conversational AI, Quantiphi, Software Developer">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <!-- For PNG format -->
-    <link rel="icon" type="assets/Pratik-Mali-Photo" href="favicon.png">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- ===== BOTPRESS CHATBOT EMBED ===== -->
     <!-- PASTE YOUR BOTPRESS EMBED SCRIPT HERE -->
     <!-- REPLACE THIS COMMENT with your actual Botpress snippet -->
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2026/06/06/10/20260606105153-4HBWB6HT.js" defer></script>
     <!-- END BOTPRESS EMBED -->
-
 </head>
 <body>
-    <!-- Navigation -->
+
+    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-content">
                 <div class="nav-brand">
                     <span class="brand-text">Pratik Mali</span>
                 </div>
-                
-                <div class="nav-links" id="nav-links">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#certifications" class="nav-link">Certifications</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
-                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
                 <div class="nav-actions">
                     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                         <span class="theme-icon">🌙</span>
-                    </button>
-                    <button class="tutorial-btn" id="tutorial-btn">
-                        <span>?</span>
                     </button>
                     <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
                         <span></span>
@@ -59,50 +48,42 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="highlight">Pratik Mali</span>
-                    </h1>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Pratik Mali</span></h1>
                     <div class="hero-subtitle">
-                        <span class="typing-text" id="typing-text"></span>
-                        <span class="cursor">|</span>
+                        <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
                     </div>
                     <p class="hero-description">
-                        Results-driven IVR and Contact Center Specialist with over 3 years of experience 
-                        specializing in Genesys Cloud CX and NICE CXone platforms. Adept at designing 
-                        and implementing self-service IVR, Omni-Channel Orchestration Routing, and 
-                        architecting advanced bot flows.
+                        Results-driven IVR and Contact Center Specialist with over 3 years of experience in Genesys Cloud CX, NICE CXone, chatbot-related development, API integrations, and customer service automation. Currently contributing to conversational AI solutions at Quantiphi.
                     </p>
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn--primary">Get In Touch</a>
-                        <a href="./assets/Pratik-Mali-Resume.pdf" target="_blank" class="btn btn--outline" download>
-                            Download Resume
-                        </a>
+                        <a href="#contact" class="btn btn--primary btn--lg">Get In Touch</a>
+                        <a href="#projects" class="btn btn--outline btn--lg">View My Work</a>
+                        <a href="./assets/Pratik-Mali-Resume.pdf" class="btn btn--secondary btn--lg" download>Download CV</a>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/pratik-mali-06b172228/" target="_blank" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
+                        <a href="https://www.linkedin.com/in/pratik-mali-06b172228/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/PratikMali2210" target="_blank" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
+                        <a href="https://github.com/PratikMali2210" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.credly.com/users/pratik-mali.e1554192" target="_blank" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0L9 9H0l7.5 5.5L4.5 24 12 18l7.5 6-3-9.5L24 9h-9l-3-9z"/>
-                            </svg>
+                        <a href="https://www.credly.com/users/pratik-mali" target="_blank" class="social-link" aria-label="Credly">
+                            <i class="fas fa-certificate"></i>
                         </a>
-                    </div> 
+                        <a href="mailto:malipratik999@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <div class="image-placeholder">
-                        <img src="./assets/Pratik-Mali-Photo.png" alt="Pratik Mali" class="profile-img" />
+                    <img src="./assets/Pratik-Mali-Photo.png" alt="Pratik Mali" class="profile-img"
+                        onerror="this.style.display='none'; document.getElementById('profile-placeholder').style.display='flex';">
+                    <div class="image-placeholder" id="profile-placeholder" style="display:none;">
+                        <i class="fas fa-user profile-icon" style="font-size: 80px;"></i>
                     </div>
                 </div>
             </div>
@@ -110,65 +91,79 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Get to know me and my professional journey</p>
             </div>
-            
             <div class="about-content">
-                <div class="about-text">
-                    <div class="about-description">
-                        <p>
-                            I am a dedicated IVR & Contact Center Specialist with expertise in 
-                            <strong>Genesys Cloud CX</strong> and <strong>NICE CXone</strong> platforms. 
-                            My passion lies in creating seamless customer experiences through intelligent 
-                            automation and robust system integrations.
-                        </p>
-                        <p>
-                            With over 3 years at <strong>Capgemini Digital</strong>, I've architected 
-                            complex IVR flows, implemented omni-channel bot solutions, and delivered 
-                            innovative contact center solutions that enhance customer engagement and 
-                            operational efficiency.
-                        </p>
+                <div class="about-description">
+                    <p>
+                        I am a <strong>Software Developer and IVR Specialist</strong> with strong experience in contact center technologies, especially Genesys Cloud and NICE CXone. I currently work at <strong>Quantiphi</strong>, where I contribute to chatbot and conversational AI related development using JavaScript, React, Node.js, APIs, and webhooks.
+                    </p>
+                    <p>
+                        My background includes IVR flow creation, bot development, automation, secure payment flows, API integrations, and customer experience optimization. With 3+ years of hands-on experience across enterprise contact center platforms, I bring both technical depth and practical delivery to every project.
+                    </p>
+                </div>
+
+                <div class="achievements">
+                    <div class="achievement-item">
+                        <div class="achievement-number" data-count="3">0</div>
+                        <div class="achievement-text">Years Experience</div>
                     </div>
-                    
-                    <div class="achievements">
-                        <div class="achievement-item">
-                            <div class="achievement-number">3+</div>
-                            <div class="achievement-text">Years Experience</div>
-                        </div>
-                        <div class="achievement-item">
-                            <div class="achievement-number">50+</div>
-                            <div class="achievement-text">IVR Flows Created</div>
-                        </div>
-                        <div class="achievement-item">
-                            <div class="achievement-number">7</div>
-                            <div class="achievement-text">Certifications</div>
+                    <div class="achievement-item">
+                        <div class="achievement-number" data-count="50">0</div>
+                        <div class="achievement-text">IVR Flows Created</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-number" data-count="7">0</div>
+                        <div class="achievement-text">Certifications</div>
+                    </div>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <h4>Currently at Quantiphi</h4>
+                            <p>Software Developer — Chatbot & Conversational AI Development (Jan 2026 – Present)</p>
                         </div>
                     </div>
-                    
-                    <div class="personal-info">
-                        <h4>Personal Information</h4>
-                        <div class="info-grid">
-                            <div class="info-item">
-                                <span class="info-label">Location:</span>
-                                <span class="info-value">Pune, Maharashtra, India</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Email:</span>
-                                <span class="info-value">malipratik999@gmail.com</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Phone:</span>
-                                <span class="info-value">+91 7066889505</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Education:</span>
-                                <span class="info-value"> B.E. Mechanical Engineering</span>
-                                <!-- <span class="info-value"> SKN SINHGAD COLLEGE OF ENGINEERING, KORTI PANDHARPUR </span> -->
-                            </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h4>Certified Professional</h4>
+                            <p>AWS, Azure, and NICE certified with verified credentials</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-robot"></i>
+                        <div>
+                            <h4>Chatbot & AI Development</h4>
+                            <p>Building conversational AI solutions with Dialogflow, GCP, APIs, and webhooks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal-info">
+                    <h4>Personal Information</h4>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Pune, Maharashtra, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">malipratik999@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Phone:</span>
+                            <span class="info-value">+91 7066889505</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Education:</span>
+                            <span class="info-value">B.E. Mechanical Engineering</span>
                         </div>
                     </div>
                 </div>
@@ -177,121 +172,101 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
+                <h2 class="section-title">Technical Skills & Expertise</h2>
                 <p class="section-subtitle">My expertise across different technologies</p>
             </div>
-            
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category" data-category="contactCenter">
                     <h3 class="category-title">Contact Center Platforms</h3>
-                    <div class="skills-list" data-category="contactCenter">
-                        <!-- Skills will be populated by JavaScript -->
-                    </div>
                 </div>
-                
-                <div class="skill-category">
+                <div class="skill-category" data-category="programming">
                     <h3 class="category-title">Programming & Development</h3>
-                    <div class="skills-list" data-category="programming">
-                        <!-- Skills will be populated by JavaScript -->
-                    </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3 class="category-title">Cloud Platforms</h3>
-                    <div class="skills-list" data-category="cloud">
-                        <!-- Skills will be populated by JavaScript -->
-                    </div>
-                </div>
-                
-                <div class="skill-category">
+                <div class="skill-category" data-category="frameworks">
                     <h3 class="category-title">Frameworks & Tools</h3>
-                    <div class="skills-list" data-category="frameworks">
-                        <!-- Skills will be populated by JavaScript -->
-                    </div>
+                </div>
+                <div class="skill-category" data-category="cloud">
+                    <h3 class="category-title">Cloud & GCP</h3>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section class="experience" id="experience">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Professional Experience</h2>
                 <p class="section-subtitle">My career journey and achievements</p>
             </div>
-            
             <div class="timeline">
-                <!-- Experience items will be populated by JavaScript -->
+                <!-- Populated by app.js -->
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">Showcasing my development work and technical expertise</p>
             </div>
-            
             <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="react">React</button>
-                <button class="filter-btn" data-filter="frontend">Frontend</button>
                 <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
                 <button class="filter-btn" data-filter="genesys">Genesys</button>
                 <button class="filter-btn" data-filter="integration">Integration</button>
             </div>
-            
             <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be populated by JavaScript -->
+                <!-- Populated by app.js -->
+            </div>
+            <div class="projects-cta">
+                <p>Want to see more of my work?</p>
+                <a href="https://github.com/PratikMali2210" target="_blank" class="btn btn--primary">View All Projects on GitHub</a>
             </div>
         </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <section class="certifications" id="certifications">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Certifications</h2>
-                <p class="section-subtitle">Professional certifications and achievements</p>
+                <h2 class="section-title">Professional Certifications</h2>
+                <p class="section-subtitle">All certifications are verified and can be validated through official certification providers</p>
             </div>
-            
             <div class="certifications-grid" id="certifications-grid">
-                <!-- Certifications will be populated by JavaScript -->
+                <!-- Populated by app.js -->
+            </div>
+            <div class="cert-verify-section" style="text-align:center; margin-top: 32px;">
+                <a href="https://www.credly.com/users/pratik-mali" target="_blank" class="btn btn--outline">View All Badges on Credly</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss your contact center and IVR development needs</p>
+                <p class="section-subtitle">Let's discuss your contact center or AI projects!</p>
             </div>
-            
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's Connect</h3>
-                    <p>
-                        I'm always interested in discussing new opportunities, 
-                        contact center innovations, or potential collaborations.
-                    </p>
-                    
+                    <p>I'm passionate about creating innovative contact center and conversational AI solutions. Whether you need IVR development, chatbot implementation, or system integrations, I'm here to help.</p>
                     <div class="contact-items">
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
                             <div class="contact-details">
                                 <span class="contact-label">Email</span>
-                                <span class="contact-value">malipratik999@gmail.com</span>
+                                <a href="mailto:malipratik999@gmail.com" class="contact-value">malipratik999@gmail.com</a>
                             </div>
                         </div>
-                        
                         <div class="contact-item">
                             <div class="contact-icon">📱</div>
                             <div class="contact-details">
@@ -299,7 +274,6 @@
                                 <span class="contact-value">+91 7066889505</span>
                             </div>
                         </div>
-                        
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
                             <div class="contact-details">
@@ -307,35 +281,82 @@
                                 <span class="contact-value">Pune, Maharashtra, India</span>
                             </div>
                         </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/pratik-mali-06b172228/" target="_blank" class="contact-value">Connect with me</a>
+                            </div>
+                        </div>
                     </div>
+                    <p class="response-time"><i class="fas fa-clock"></i> I typically respond within 24 hours</p>
                 </div>
-                
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name *</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email *</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject" class="form-label">Subject *</label>
-                        <input type="text" id="subject" name="subject" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message *</label>
-                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn--primary btn--full-width">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-loading hidden">Sending...</span>
-                    </button>
-                </form>
+
+                <div class="contact-form">
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Your full name" required autocomplete="name">
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="your@email.com" required autocomplete="email">
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="company">Company Name</label>
+                                <input type="text" id="company" name="company" class="form-control"
+                                    placeholder="Your company" autocomplete="organization">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="position">Your Position</label>
+                                <input type="text" id="position" name="position" class="form-control"
+                                    placeholder="Your role" autocomplete="organization-title">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject *</label>
+                            <select id="subject" name="subject" class="form-control" required autocomplete="off">
+                                <option value="">Select a subject...</option>
+                                <option value="IVR Development Project">IVR Development Project</option>
+                                <option value="Contact Center Solution">Contact Center Solution</option>
+                                <option value="Genesys Cloud Integration">Genesys Cloud Integration</option>
+                                <option value="Bot / Chatbot Development">Bot / Chatbot Development</option>
+                                <option value="General Consultation">General Consultation</option>
+                                <option value="Job Opportunity">Job Opportunity</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5"
+                                placeholder="Tell me about your project or inquiry..." required
+                                maxlength="500" autocomplete="off"></textarea>
+                            <div class="character-count"><span id="char-count">0</span> / 500 characters</div>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                I consent to having this website store my submitted information. *
+                            </label>
+                            <span class="form-error" id="consent-error"></span>
+                        </div>
+                        <div id="form-status"></div>
+                        <button type="submit" class="btn btn--primary btn--full-width" id="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading hidden">Sending...</span>
+                        </button>
+                        <p class="form-note">Your information is secure and will only be used to respond to your inquiry.</p>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -345,10 +366,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2024 Pratik Mali. All rights reserved.</p>
-                    <p>Built with passion for contact center excellence</p>
+                    <p>© 2025 Pratik Mali. All rights reserved.</p>
+                    <p>IVR & Genesys Cloud Bot Developer | Software Developer at Quantiphi</p>
                 </div>
-                
                 <div class="footer-links">
                     <a href="https://www.linkedin.com/in/pratik-mali-06b172228/" target="_blank" class="footer-link">LinkedIn</a>
                     <a href="https://github.com/PratikMali2210" target="_blank" class="footer-link">GitHub</a>
@@ -358,51 +378,16 @@
         </div>
     </footer>
 
-    <!-- Tutorial Modal -->
-    <div class="modal hidden" id="tutorial-modal">
-        <div class="modal-backdrop"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Portfolio Tutorial</h3>
-                <button class="modal-close" id="close-tutorial">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="tutorial-steps">
-                    <div class="tutorial-step">
-                        <h4>🧭 Navigation</h4>
-                        <p>Use the navigation menu to smoothly scroll between sections. Works on mobile too!</p>
-                    </div>
-                    <div class="tutorial-step">
-                        <h4>🎯 Interactive Features</h4>
-                        <p>Click on experience items to expand details. Filter projects by technology.</p>
-                    </div>
-                    <div class="tutorial-step">
-                        <h4>🏅 Certifications</h4>
-                        <p>Click on verified certifications to view official verification links.</p>
-                    </div>
-                    <div class="tutorial-step">
-                        <h4>🌙 Theme Toggle</h4>
-                        <p>Switch between light and dark modes using the theme toggle button.</p>
-                    </div>
-                    <div class="tutorial-step">
-                        <h4>📱 Responsive Design</h4>
-                        <p>The portfolio is fully responsive and works great on all devices.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Certification Modal -->
     <div class="modal hidden" id="cert-modal">
         <div class="modal-backdrop"></div>
         <div class="modal-content">
             <div class="modal-header">
                 <h3 id="cert-modal-title">Certification Details</h3>
-                <button class="modal-close" id="close-cert-modal">&times;</button>
+                <button class="modal-close" id="close-cert-modal" aria-label="Close">×</button>
             </div>
             <div class="modal-body" id="cert-modal-body">
-                <!-- Certification details will be populated by JavaScript -->
+                <!-- Populated by JS -->
             </div>
         </div>
     </div>
