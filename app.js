@@ -34,7 +34,6 @@ class Portfolio {
         // this.startTypingAnimation();
         this.setupScrollAnimations();
         this.setupNavigation();
-        this.setupThemeToggle();
         this.setupProjectFilters();
         this.setupSkillBars();
         this.setupTabs();
@@ -523,28 +522,6 @@ class Portfolio {
                 if (targetPane) targetPane.classList.add('active');
             });
         });
-    }
-
-    setupThemeToggle() {
-        const themeToggle = document.getElementById('theme-toggle');
-        if (!themeToggle) return;
-
-        const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
-        this.setTheme(savedTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const newTheme = this.currentTheme === 'dark' ? 'light' : 'dark';
-            this.setTheme(newTheme);
-        });
-    }
-
-    setTheme(theme) {
-        this.currentTheme = theme;
-        document.documentElement.setAttribute('data-color-scheme', theme);
-        localStorage.setItem('portfolio-theme', theme);
-
-        const icon = document.querySelector('#theme-toggle i');
-        if (icon) icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
     }
 
     setupTutorial() {
@@ -1435,14 +1412,18 @@ class PortfolioApp {
         const themeIcon = themeToggle?.querySelector('.theme-icon');
         if (!themeToggle || !themeIcon) return;
 
-        const currentTheme = document.documentElement.getAttribute('data-color-scheme') || 'light';
-        themeIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+        document.documentElement.setAttribute('data-color-scheme', savedTheme);
+        themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        themeToggle.setAttribute('aria-pressed', String(savedTheme === 'dark'));
 
         themeToggle.addEventListener('click', () => {
             const current = document.documentElement.getAttribute('data-color-scheme') || 'light';
             const newTheme = current === 'light' ? 'dark' : 'light';
             document.documentElement.setAttribute('data-color-scheme', newTheme);
+            localStorage.setItem('portfolio-theme', newTheme);
             themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+            themeToggle.setAttribute('aria-pressed', String(newTheme === 'dark'));
         });
     }
 
